@@ -32,5 +32,13 @@ Space Complexity = 0(logN)
   
   Best thing constant space and time.
 
+  //Convertion of int to long
+   int x =10;
+   long y = (long)x;
+   
+//Modulo problems
+ Declare as long and then modulo output with 1000000007
+   
+
   
  
