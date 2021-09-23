@@ -22,6 +22,15 @@ Arrays.sort(arrayname);
 
 Time Complexity = O(NlogN)
 Space Complexity = 0(logN)
+  
+//Check if number if power of 2 easy one
+  
+  n!=0 and n&(n-1)==0 bit wise and will be zero for such numbers.
+  
+  TC -> 0(1)
+  SC->0(1)
+  
+  Best thing constant space and time.
 
   
  
