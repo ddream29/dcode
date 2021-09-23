@@ -35,10 +35,17 @@ Space Complexity = 0(logN)
   //Convertion of int to long
    int x =10;
    long y = (long)x;
+
+//Conversion of Integer to String
+
+ Integer.toString(NumbertobeConverted);
    
 //Modulo problems
  Declare as long and then modulo output with 1000000007
    
+//Declaring ArrayList
+   
+ List<String> name = new ArrayList<>();   
 
   
  
