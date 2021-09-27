@@ -47,5 +47,19 @@ Space Complexity = 0(logN)
    
  List<String> name = new ArrayList<>();   
 
+//HashMap Declaration
+
+HashMap<Integer,Integer> data = new HashMap<>();
+
+//Iterating through HashMap
+
+for(Map.Entry<Integer,Integer> mapdata : data.entrySet())
+        {
+            if(mapdata.getKey()==mapdata.getValue())
+            {
+               number = Math.max(number,mapdata.getKey()); 
+            }
+        }
+
   
  
