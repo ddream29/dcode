@@ -1,0 +1,36 @@
+Template Three
+
+Usage
+
+When ever we are supposed to find subbarrays length where the length is not fixed 
+
+Initialise the variables and required conditions 
+
+Start=0
+cursum=0
+maxlength=0
+
+For each of the element in array loop through them and calculate the given conditon
+
+When the condition breaks then you just need to calculate lenght till that point 
+
+Erom the end index - start index + 1 and maxlength
+
+After this just remove the element in index start
+
+int start=0;
+int cursum=0;
+int maxlength=0;
+
+    for(int end=0;end<nums.length;end++)
+    {
+    cursum=cursum+nums[end];
+    if(cursum>target)
+    {
+    maxlength=Math.max(maxlength,end-start+1);
+    cursum=cursum-num[start];
+    start++;
+    }
+    return maxans;
+    }
+    
