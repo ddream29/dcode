@@ -25,7 +25,7 @@ int maxlength=0;
     for(int end=0;end<nums.length;end++)
     {
     cursum=cursum+nums[end];
-    if(cursum>target)
+    while(cursum>target)
     {
     maxlength=Math.max(maxlength,end-start+1);
     cursum=cursum-num[start];
