@@ -1,0 +1,38 @@
+When do we use divide and conquer?
+
+A problem can be solved using divide and conquer when the given problem can be :
+
+Divided into a number of subproblems that are smaller instances of the same problem.
+Each subproblem can be solved recursively which basically means each instance of the subproblem is identical in nature.
+The solutions of each subproblem can be combined so as to solve the problem at hand.
+
+Merge sort , quick sort
+Maximum sub-array problem
+Strassen’s algorithm for matrix multiplication
+
+*********************************************************************************************************************************************************************************
+
+https://codeburst.io/solve-any-divide-conquer-problem-with-this-trick-a187810cbd99
+
+
+Solving :
+
+All the problems will either be based on Binary Search or Merge Sort
+
+Binary Search Time Complexity is O(logn) -> Start from middle and check and move left and right Accordingly
+Merge Sort Time Complexity is O(nlogn)  -> Sorting Left and Right Array Seperately and then combing them based on which element is smaller in the both arrays's
+
+
+How to check this?
+
+First Try to come up with the brute force solution of given problem
+
+If the brute force solution runs in O(n) time, choose Binary Search, and if O(n²), go with Merge Sort.
+
+
+
+
+
+ 
+
+
