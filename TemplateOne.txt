@@ -1,0 +1,60 @@
+Template One 
+
+Usages
+
+Need to flip a Character or Number 
+Defined max occurence of a Character or Number
+
+
+         Define the value of k 
+             
+         Define Start point 
+             
+         Define End Point 
+             
+         Point both at 0th position
+             
+         1 0 0 1 1 0
+         
+         Start
+         End
+         
+         For each iteration check if given value is defined Character or Number if yes then decrement the vale of k
+             
+         if at any point we find that k value is less than 0 that means we have exceded the limt 
+         of flips or deletion 
+             
+         So we need to move the Start pointer to the a place where k is again back to zero
+         and increment the vale of the both Start Pointer and K value
+             
+         Finaly Maximum value will be 
+                     
+         Max of max till now and length of substring between End and Start Index + 1 because we are finding the lengths
+         
+         
+         
+         int k;
+         int start=0;
+         int ans=0;
+         
+         for(int end=0;end<nums.length;end++)
+         {
+             if(nums[end]==Given char of number or condition)
+             {
+                 k--;
+             }
+             
+             while(k<0)
+             {
+                 if(nums[start]==Given char of number or condition)
+                 {
+                     k++;
+                 }
+                 
+                 start++;
+             }
+             
+             ans=Math.max(ans,end-start+1);
+         }
+            
+        return ans;     
