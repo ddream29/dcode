@@ -1,0 +1,46 @@
+Template Two
+
+Usage
+
+When ever we are supposed to find min/max/ subarray of some fixed length
+
+Initialise the variables
+
+Start=0
+cursum=0
+maxsum=0
+
+K=length of the subarray
+
+For each of the element in array loop through them and add the cummulative sum
+
+Now when the index of the outer loop extends the size of given subarray length then 
+
+Calculate the maxsum till now 
+
+Remove the sum till the point of starting from the end index - start index + 1 
+
+Then increment the start index 
+
+
+
+
+int start=0;
+int cursum=0;
+int maxans=0;
+
+    for(int end=0;end<nums.length;end++)
+    {
+    cursum=cursum+nums[end];
+    if(end>k-1)
+    {
+    maxsum=Math.max(maxsum,cursum);
+    cursum=cursum-num[end-(start-1)];
+    start++;
+    }
+    return maxans;
+    }
+    
+
+
+
