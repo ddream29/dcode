@@ -1,0 +1,21 @@
+When we do AND bit operation between number and number-1, the rightmost bit of one in the original number would be turned off (from one to zero).
+
+class Solution {
+  public int rangeBitwiseAnd(int m, int n) {
+    while (m < n) {
+      // turn off rightmost 1-bit
+      n = n & (n - 1);
+    }
+    return m & n;
+  }
+}
+
+2 4
+
+4=100
+3=011
+2=010
+1=001
+
+
+  
