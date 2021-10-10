@@ -1,4 +1,4 @@
-/*Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.
+Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.
 
 If the tree has more than one mode, return them in any order.
 
@@ -6,12 +6,12 @@ Assume a BST is defined as follows:
 
 The left subtree of a node contains only nodes with keys less than or equal to the node's key.
 The right subtree of a node contains only nodes with keys greater than or equal to the node's key.
-Both the left and right subtrees must also be binary search trees.*/
+Both the left and right subtrees must also be binary search trees.
 
-//https://www.youtube.com/watch?v=1FJDyBSfEbo
+www.youtube.com/watch?v=1FJDyBSfEbo
   
-/**
- * Definition for a binary tree node.
+
+/* Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
@@ -26,8 +26,7 @@ Both the left and right subtrees must also be binary search trees.*/
  * }
  */
 
-//Mode the one that occurs the maximum times 
-
+Mode the one that occurs the maximum times 
 
 class Solution {
     Integer prev=null;
@@ -88,10 +87,11 @@ class Solution {
 
 TC O(N)
 SC O(1) Without stack recur call else O(N)
-//We are doing Inorder Traversal why?? Because Inorder is left middle right and all the elements will be sorted in this manner and we cam easily find duplucates just beside each other if they are present
-//Traverse left
-//if previous is not null then if prev == curr vale then increment count else keep count to zero
-//Check if curr > max then increment the max = curr clear the data and add 
-//if curr and max are equal then add this val to data
-//store prev val
-//traverse right
+  
+We are doing Inorder Traversal why?? Because Inorder is left middle right and all the elements will be sorted in this manner and we cam easily find duplucates just beside each other if they are present
+Traverse left
+if previous is not null then if prev == curr vale then increment count else keep count to zero
+Check if curr > max then increment the max = curr clear the data and add 
+if curr and max are equal then add this val to data
+store prev val
+traverse right
