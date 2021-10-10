@@ -18,4 +18,11 @@ class Solution {
 1=001
 
 
+Time Complexity: \mathcal{O}(1)O(1).
+
+Similar as the bit shift approach, the number of iteration in the algorithm is bounded by the number of bits in an integer number, which is constant.
+
+Though having the same asymptotic complexity as the bit shift approach, the Brian Kernighan's algorithm requires less iterations, since it skips all the zero bits in between.
+
+Space Complexity: \mathcal{O}(1)O(1), since no additional memory is consumed by the algorithm.
   
