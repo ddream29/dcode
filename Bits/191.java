@@ -21,3 +21,7 @@ public class Solution {
       
     }
 }
+
+The run time depends on the number of 11-bits in nn. In the worst case, all bits in nn are 11-bits. In case of a 32-bit integer, the run time is O(1)O(1).
+
+The space complexity is O(1)O(1), since no additional space is allocated.
