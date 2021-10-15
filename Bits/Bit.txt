@@ -1,0 +1,11 @@
+Count Number of One's -> Hamming Weight
+
+sum=0;
+while(n!=0)
+{
+sum++;
+n=n&(n-1);
+}
+return sum;
+
+//Doing n & n-1 will flip the first occurence of one in n 
