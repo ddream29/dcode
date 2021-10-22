@@ -1,0 +1,8 @@
+ Boyer-Moore Voting Algorithm
+
+There can be at most one majority element which is more than ⌊n/2⌋ times.
+There can be at most two majority elements which are more than ⌊n/3⌋ times.
+There can be at most three majority elements which are more than ⌊n/4⌋ times.
+and so on.
+
+Knowing this can help us understand how we can keep track of majority elements which satisfies O(1)O(1) space requirement.
