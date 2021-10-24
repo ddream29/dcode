@@ -1,3 +1,6 @@
+Alogorithms 
+https://cp-algorithms.com/index.html
+
 Fixed and Dynamic
 https://www.youtube.com/watch?v=MK-NZ4hN7rs
 
