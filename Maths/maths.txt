@@ -1,3 +1,5 @@
+https://www.hackerearth.com/practice/math/number-theory
+ 
  positive integer n > 1 is a prime if and only if (n-1)! = 1 % n 
  
 Instead of a = a * -1 for making numbers negative, use a = -a.
